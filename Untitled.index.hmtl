@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Joy's Colorful Corner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      color: #333;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(255,255,255,0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 20px;
+      background: white;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      transform: scale(1.1);
+      background: #ffecd2;
+    }
+
+    section {
+      margin: 30px;
+      padding: 25px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.8);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .projects div, .skills span {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 15px;
+      background: #fff;
+      transition: 0.3s;
+    }
+
+    .projects div:hover, .skills span:hover {
+      transform: rotate(-3deg) scale(1.05);
+      background: #ffe0f0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 5px;
+      text-decoration: none;
+      padding: 10px;
+      background: #fff;
+      border-radius: 10px;
+      color: #333;
+    }
+
+    .contact a:hover {
+      background: #d4fc79;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🌈 Joy's Colorful Corner</h1>
+    <p>A tiny chaotic universe of thoughts, projects, and vibes ✨</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>💫 About Me</h2>
+    <p>
+      Hi! I'm Joy — a human with too many thoughts and not enough tabs to store them.
+      I like building things, overthinking everything, and occasionally making life decisions at 2AM.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>🚀 Projects</h2>
+    <div>Water Filter Business 💧</div>
+    <div>Content Creator 🎥</div>
+    <div>Random Late Night Ideas 🌙</div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>🛠 Skills</h2>
+    <span>Marketing</span>
+    <span>Video Editing</span>
+    <span>Overthinking</span>
+    <span>Surviving Mondays</span>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>📬 Contact</h2>
+    <a href="#">Instagram</a>
+    <a href="#">Email</a>
+    <a href="#">TikTok</a>
+  </section>
+
+  <footer>
+    <p>Made with chaos & caffeine ☕</p>
+  </footer>
+
+</body>
+</html>
